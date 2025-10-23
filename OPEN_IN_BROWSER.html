@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Medicine Reminder App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .emoji {
+            font-size: 64px;
+            margin: 20px 0;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #4A90E2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            background: #357ABD;
+        }
+        .instructions {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .step {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        .loading {
+            color: #4A90E2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">💊</div>
+        <h1>Medicine Reminder App</h1>
+        <p>Click the button below to open the app in your browser!</p>
+        
+        <a href="http://localhost:8081" class="button" target="_blank">
+            🌐 Open App in Browser
+        </a>
+        
+        <div class="instructions">
+            <h3>📋 If the app doesn't open:</h3>
+            <div class="step">1. Make sure Expo is running in your terminal</div>
+            <div class="step">2. Look for "Press w │ open web" in terminal</div>
+            <div class="step">3. Press the 'w' key</div>
+            <div class="step">4. Or manually visit: <a href="http://localhost:8081" target="_blank">http://localhost:8081</a></div>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #999;">
+            <strong>For Phone:</strong> Download "Expo Go" app and scan QR code from terminal
+        </p>
+    </div>
+    
+    <script>
+        // Auto-check if server is running
+        setTimeout(() => {
+            fetch('http://localhost:8081')
+                .then(() => {
+                    document.querySelector('.loading').textContent = '✅ Server is running!';
+                })
+                .catch(() => {
+                    document.querySelector('.loading').textContent = '⏳ Waiting for server to start...';
+                });
+        }, 2000);
+    </script>
+</body>
+</html>
+
