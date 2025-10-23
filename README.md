@@ -31,6 +31,35 @@ A comprehensive healthcare mobile and web application that helps users manage th
 - 📅 **Schedule History** - View past taken/missed doses
 - 🎯 **Statistics Dashboard** - Quick overview of medications
 
+## 🆚 How We Compare
+
+Our Medicine Reminder app stands out in the competitive healthcare app market:
+
+### vs. [Medisafe](https://play.google.com/store/apps/details?id=com.medisafe.android.client&hl=en-US) (4.5★, 5M+ downloads)
+
+| Feature | Medi-Reminder | Medisafe |
+|---------|---------------|----------|
+| **Free to Use** | ✅ 100% Free | ⚠️ Limited (2 meds only) |
+| **Unlimited Medications** | ✅ Included | ❌ Premium ($40/year) |
+| **Custom Sounds** | ✅ Free | ❌ Premium only |
+| **Pharmacy Integration** | ✅ Direct ordering | ⚠️ Limited |
+| **Web Access** | ✅ Full web app | ❌ Mobile only |
+| **Open Source** | ✅ GitHub available | ❌ Closed source |
+| **No Registration Required** | ✅ Works offline-first | ✅ Optional signup |
+| **Color Customization** | ✅ 8 colors free | ❌ Premium only |
+| **Modern UI** | ✅ Latest design | ⚠️ Standard |
+
+**Our Advantages:**
+- 🆓 **Truly Free** - No subscription fees, no paywalls
+- 🌐 **Cross-Platform** - Works on web, iOS, Android
+- 🎨 **Beautiful UI** - Modern, clean design
+- 🔓 **Open Source** - Transparent and customizable
+- 🚀 **Fast & Lightweight** - Built with latest tech
+- 💾 **Offline First** - No internet required
+- 🏥 **Pharmacy Orders** - Integrated delivery tracking
+
+**Reference:** Based on [Medisafe app reviews](https://play.google.com/store/apps/details?id=com.medisafe.android.client&hl=en-US), users consistently complain about features being moved behind paywalls. Our app keeps everything free and accessible!
+
 ## 🚀 Live Demo
 
 **Try it now:** [https://medi-reminder.vercel.app](https://medi-reminder.vercel.app)
